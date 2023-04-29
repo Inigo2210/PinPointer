@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset = "utf-8">
+		<title> Pin Pointer </title>
+		
+	<style>
+	.btn				{opacity: 0.9; background-color: #82EEFD; border: none; border-radius: 15px; margin-left: 0px; height: 80px; width: 200px; font-size: 17pt; font-family: arial, sans-serif;}
+	.btn:hover			{opacity: 1.0; background-color: #52B2BF; cursor: pointer;}
+	body				{background-color: lightgrey; font-family: arial, sans-serif;}
+	#title				{text-align: center; font-size: 100pt; font-family: impact, arial, sans-serif; text-shadow: dimgrey 5px 5px;}	
+	div					{margin-right: auto; margin-left: auto;}
+	li 					{font-family: arial, sans-serif;}
+	h1					{text-align: center}
+	button				{cursor: pointer;}
+	
+	
+	</style>
+	
+	</head>
+	
+	
+	<body>
+	
+	<div> <h1 id = "title"> Pin Pointer </h1> </div> 
+	
+	<div style = "margin-left: auto; margin-right: auto;"> 
+	<h1 style = "font-family: arial, sans-serif"> Game Modes: </h1>
+	</div>
+	
+	<table style = "margin-left: auto; margin-right: auto;">
+		<tr>
+		<td> <button class = "btn" onclick = "window.location.href='Game_Files/difficulty_select.html';" style = "margin-right: 100px"> Country Guessing </button> </td>
+		<td> <button class = "btn" onclick = "window.location.href='Game_Files/flag_difficulty_select.html';" style = "margin-right: 100px"> Flag Guessing </button> </td>
+		<tr id = "info" class = "button">
+			<td> <div> <ul>
+				<li> You will be given a <br> random image and will <br> have to guess which country <br> the picture was taken in. </li> <br>
+				<li> Each game is 10 rounds </li> <br>
+				<li> A correct answer will <br> award you 1 point </li>
+				</ul> </div> </td>
+			<td> <div> <ul>
+				<li> You will be given a <br> random flag and will <br> have to guess which country <br> the flag belongs to </li> <br>
+				<li> Each game is 10 rounds </li> <br>
+				<li> A correct answer will <br> award you 1 point </li>
+				</ul> </div> </td>
+		</tr>
+	</table>
+	
+	
+	<div style = "margin-left: 1100px; margin-top: -50px;"> <button style = "height: 50px; width: 150px;" onclick = "window.location.href='Game_Files/highScores.html';"> View High Scores </button> </div> 
+	<div style = "margin-left: 1100px; margin-top: -120px;"> <button style = "height: 50px; width: 150px;" onclick = "window.location.href='Game_Files/pinBucks.html';"> What are Pin Bucks? </button> </div> 
+	<div style = "margin-left: 1100px; margin-top: -110px;"> <h2 id = "pin"> Pin Bucks Balance: </h2> </div> 
+	</body>
+	
+	<script>
+	var pinBucks;
+	//localStorage.removeItem("pinBucks");
+	window.addEventListener('load', function() {
+		var pinBucksStr = localStorage.getItem("pinBucks");
+		if (pinBucksStr == null) {
+			localStorage.setItem("pinBucks", "500");
+			pinBucks = parseInt(localStorage.getItem("pinBucks"));
+			document.getElementById("pin").innerHTML = "Pin Bucks Balance: " + pinBucks;
+		}
+		else {
+			pinBucks = parseInt(localStorage.getItem("pinBucks"));
+			document.getElementById("pin").innerHTML = "Pin Bucks Balance: " + pinBucks;
+		}
+	});
+	</script>
+
+</html>
