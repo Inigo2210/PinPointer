@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset = "utf-8">
+		<title> Country Game - Select Difficulty </title>
+		<link href='https://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet'>
+		<link rel="stylesheet" href="country_difficulty_StyleSheet.css">
+	
+	</head>
+	
+	
+	<body id = "body">
+	
+	<div> <h1 id = "title"> Country Guessing </h1> </div> 
+	
+	<div> 
+	<h1 id = "subtitle" style = "font-family: arial, sans-serif"> Difficulty Modes: </h1>
+	</div>
+	
+	
+	<table style = "margin-left: 150px;">
+		<tr>
+		<td> <button onclick = "window.location.href='game_easy.html';" style = "margin-right: 50px"> Easy </button> </td>
+		<td> <button onclick = "window.location.href='game_intermediate.html';" style = "margin-right: 50px"> Intermediate </button> </td>
+		<td> <button onclick = "window.location.href='game_hard.html';" style = "margin-right: 50px"> Hard </button> </td>
+		<td> <button onclick = "window.location.href='jqvmap-master/examples/game_expert.html';" style = "margin-right: 50px"> Expert </button> </td>
+		<td> <button onclick = "window.location.href='jqvmap-master/examples/game_nightmare.html';" id = "nightmare" style = "margin-right: 50px"> Nightmare </button> </td>
+		<tr id = "info" class = "button">
+			<td> <div> <ul>
+				<li> No timer </li>
+				<li> Easy images </li> 
+				<li> Multiple Choice Format </li>
+				</ul> </div> </td>
+			<td> <div> <ul>
+				<li> 15 second timer </li>
+				<li> Easy images </li> 
+				<li> Multiple Choice Format </li>
+				</ul> </div> </td>
+			<td> <div> <ul>
+				<li> 8 second timer </li>
+				<li> Hard images </li> 
+				<li> Multiple Choice Format </li>
+				</ul> </div> </td>
+			<td> <div> <ul>
+				<li> 20 second timer </li>
+				<li> Hard images </li> 
+				<li> Map Select Format </li>
+				<li> -1 point for incorrect answer </li>
+				<li> -2 points for running out of time </li>
+				</ul> </div> </td>
+			<td> <div> <ul>
+				<li> 12 second timer </li>
+				<li> Very hard images </li> 
+				<li> Harder Map Select Format </li>
+				<li> -1 point for incorrect answer </li>
+				<li> -2 points for running out of time </li>
+				</ul> </div> </td>
+		
+		
+		</tr>
+	</table>
+	
+	<div style = "margin-left: 625px; margin-top: 50px;"> 
+	<button id = "back" onclick = "window.location.href='../MAIN_MENU.html';"> Back to Main Menu </button>
+	</div>
+	
+	<script> 
+	
+	element = document.getElementById("nightmare");
+	element.addEventListener("mouseover",function(){
+	document.getElementById("body").classList.add("static");
+	document.getElementById("info").style.color = "white";
+	document.getElementById("title").style.color = "whites";
+	document.getElementById("subtitle").style.color = "white";
+
+	});
+	element.addEventListener("mouseout",function(){
+    document.getElementById("body").classList.remove("static");
+	document.getElementById("info").style.color = "black";
+	document.getElementById("title").style.color = "black";
+	document.getElementById("subtitle").style.color = "black";
+	});
+	
+	</script>
+	
+	
+	
+	</body>
+
+</html>

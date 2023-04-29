@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset = "utf-8">
+		<title> Your Best Scores </title>
+		
+	<style>
+	.btn				{opacity: 0.9; background-color: #82EEFD; border: none; border-radius: 15px; margin-left: 0px; height: 80px; width: 200px; font-size: 17pt; font-family: arial, sans-serif;}
+	.btn:hover			{opacity: 1.0; background-color: #52B2BF; cursor: pointer;}
+	body				{background-color: lightgrey;}
+	#title				{text-align: center; font-size: 100pt; font-family: impact, arial, sans-serif; text-shadow: dimgrey 5px 5px;}	
+	div					{margin-right: auto; margin-left: auto;}
+	li 					{font-family: arial, sans-serif;}
+	h1,h3				{font-family: arial, sans-serif; text-align: center}
+	button				{cursor: pointer;}
+	td					{padding: 10px; font-size: 20pt; font-family: arial, sans-serif; border: solid;}
+	#back				{height: 50px; width: 300px; opacity: 0.9; background-color: white; border: solid; border-radius: 15px; margin-left: 0px; font-size: 17pt; font-family: arial, sans-serif;}
+	#back:hover			{opacity: 1.0; background-color: lightgrey; cursor: pointer;}
+	
+	</style>
+	
+	<script src="highScores_script.js"></script>
+	
+	</head>
+	
+	
+	<body onload = "getScores()">
+	
+	<div style = "margin-left: 30px; margin-top: 5px;"> 
+	<button id = "back" onclick = "window.location.href='../MAIN_MENU.html';"> Back to Main Menu </button>
+	</div>
+	
+	<div style = "margin-top: -30px; margin-left: auto; margin-right: auto;"> 
+	<h1 style = "font-family: arial, sans-serif"> Your Best Scores: </h1>  <h3> Note: You must have browser cookies enabled for high score tracking to work </h3> 
+	</div>
+	
+	<table style = "margin-left: auto; margin-right: auto;">
+	<tr>
+		<td> Country Easy </td>
+		<td id = "Ceasy"> </td>
+	</tr>
+	<tr>
+		<td> Country Intermediate </td>
+		<td id = "Cinter">  </td>
+	</tr>
+	<tr>
+		<td> Country Hard </td>
+		<td id = "Chard">  </td>
+	</tr>
+	<tr>
+		<td> Country Expert </td>
+		<td id = "Cexpert">  </td>
+	</tr>
+	<tr>
+		<td> Country Nightmare </td>
+		<td id = "Cnight">  </td>
+	</tr>
+	<tr>
+		<td> Flag Normal </td>
+		<td id = "Fnorm">  </td>
+	</tr>
+	<tr>
+		<td> Flag Hard </td>
+		<td id = "Fhard">  </td>
+	</tr>
+	<tr>
+		<td> Flag Expert </td>
+		<td id = "Fexpert">  </td>
+	</tr>
+	<tr>
+		<td> Flag Nightmare </td>
+		<td id = "Fnight">  </td>
+	</tr>
+	
+	</table>
+	
+	
+	<div style = "margin-left: 700px; margin-top: 20px;"> <button onclick = "resetHighScores()"> Reset High Scores </button> </div> 
+	</body>
+
+	
+</html>

@@ -1,0 +1,13 @@
+div						{text-align: center; border: none; margin-left: 80px;}
+button 					{display: inline-block; color: black; opacity: 0.8; background-color: white; font-size: 15pt; height: 70px; width: 200px;}
+button:enabled:hover 	{opacity: 1; cursor: pointer;} 
+#nextBtn				{font-size: 20pt; margin-top: 40px; margin-left: 380px;}
+body 					{font-family: arial, sans-serif; background-color: lightgrey;}
+img 					{border: solid; max-height: 400px; margin-left: 120px;}
+table					{margin-left: 50px; border-spacing: 10px}
+button:disabled 		{opacity: 0.5;}
+#nextBtn:disabled		{opacity: .5;}
+#restartBtn				{opacity: 0.8; color: black; background-color: white; font-size: 15pt;}
+#restartBtn:hover 		{opacity: 1; cursor: pointer;}
+#countrySelect			{height: 50px; width: 200px; font-size: 15pt;}
+	

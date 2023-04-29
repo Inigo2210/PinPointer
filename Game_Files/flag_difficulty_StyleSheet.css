@@ -1,5 +1,4 @@
-`	
-	
+
 	div					{margin: auto;}
 	h1					{text-align: center}
 	button				{opacity: 0.9; background-color: #82EEFD; border: none; border-radius: 15px; margin-left: 0px; height: 80px; width: 200px; font-size: 17pt; font-family: arial, sans-serif;}
@@ -17,7 +16,7 @@
 	  font-size: 40px;
 	}
 	td 					{border: none;}
-	#back				{height: 50px; width: 300px; opacity: 0.9; background-color: white; border: solid; border-radius: 15px; margin-left: 0px; font-size: 17pt; font-family: arial, sans-serif;}
+	#back				{opacity: 0.9; background-color: white; border: solid; border-radius: 15px; margin-left: 0px; height: 50px; width: 300px; font-size: 17pt; font-family: arial, sans-serif;}
 	#back:hover			{opacity: 1.0; background-color: lightgrey; cursor: pointer;}
 	li 					{font-family: arial, sans-serif;}
 	#title				{text-align: center; font-size: 80pt; font-family: impact, arial, sans-serif; text-shadow: dimgrey 5px 5px;}	

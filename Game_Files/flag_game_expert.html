@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset = "utf-8">
+		<title> Flag Game - Expert </title>
+		<link rel="stylesheet" href="game_easy_StyleSheet.css">
+	
+	</head>
+	
+	
+	
+	</head>
+	
+	<body onload="getCountry()", "timer()"> 
+	
+	<table>
+	<td>
+	<img id = "picture" src = "easy_photos/white.png">
+	
+	<div style = "margin-top: 50px;">
+	<button class = "options" id = "option0" onclick = "answerTest('option0')"> test1 </button>
+	
+	<button class = "options" id = "option1" onclick = "answerTest('option1')"> test2 </button> 
+	
+	<button class = "options" id = "option2" onclick = "answerTest('option2')"> test3 </button>
+	
+	<button class = "options" id = "option3" onclick = "answerTest('option3')"> test4 </button>
+	
+	</div>
+
+	<button id = "nextBtn" onclick = "getCountry()"> Next </button>
+	</td>
+	
+	<td style = "vertical-align:top"> <div>
+	<h1 id = "round"> Round: 1 </h1>
+	<h1 id = "points"> Points: </h1>
+	<h1 id = "pinPoints"> Pin Bucks: </h1>
+	<h1 id = "timeBonus"> Time Bonus: </h1>
+	<h1> <mark id = "answer"> </mark> </h1>
+	<h1 id = "highScore"> High score: </h1>
+	<button onclick = "restart()" id = "restartBtn"> Restart </button> 
+	<button onclick = "window.location.href='../MAIN_MENU.html';" id = "restartBtn"> Back to Main Menu </button>
+	<h1> Power-Ups: </h1>
+	<button onclick = "powerUp2()" id = "powerUp2"> Get Different Flag <br> 40PB </button> 
+	<button onclick = "powerUp1()" id = "powerUp1"> Eliminate 2 Choices <br> & Stop time  30PB </button> 	
+	<h1 style = "font-size: 50pt" id = "timer"> </h1>	
+	</div> </td>
+	</table>
+	
+	<script src="flag_game_expert_script.js"></script>
+	
+	</body>
+
+</html>
