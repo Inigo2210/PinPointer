@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title> Country Game - Expert </title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="game_expert_StyleSheet.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+
+  </head>
+
+	<body onload="getCountry()", "timer()"> 
+	
+	<table>
+	<tr>
+	<td style = "vertical-align:top"> <div>
+	<h1 style = "margin-right: 20px; display: inline-block" id = "round"> Round: 1 </h1>
+	<h1 style = "display: inline-block" id = "points"> Points: </h1>
+	<h1> <mark id = "answer"> </mark> </h1>
+	<h2 id = "highScore"> High score: </h2>
+	<h2 id = "pinPoints"> Pin Bucks: </h2>
+	<h2 id = "timeBonus"> Time Bonus: </h2>
+	<button id = "nextBtn" onclick = "getCountry()"> Next </button>
+	</div> </td>
+	<td style = "vertical-align:top">
+	<div>
+	<button onclick = "restart()" id = "restartBtn"> Restart </button> 
+	<button onclick = "window.location.href='../../../MAIN_MENU.html';" id = "restartBtn"> Back to Main Menu </button>
+	<br>
+	<button onclick = "powerUp2()" id = "powerUp2"> Get Different Image <br> 40PB </button> 
+	<button onclick = "powerUp1()" id = "powerUp1"> Get Hint+Stop Timer <br> 30PB </button> 	
+	<h1 style = "font-size: 50pt" id = "timer"> </h1>
+	<h1 id = "correctCountry"> </h1>
+	</div>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<img id = "picture" src = "easy_photos/white.png">
+	</td>
+	<td> 
+	<div id="vmap" style="width: 680px; height: 520px;"></div>
+	</td> </tr>
+	</table>
+	<br>
+	
+	<script type="text/javascript" src="game_expert_script.js"></script>
+	
+	
+  </body>
+</html>
