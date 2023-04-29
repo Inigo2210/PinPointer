@@ -1,0 +1,142 @@
+`	
+	
+	div					{margin: auto;}
+	h1					{text-align: center}
+	button				{opacity: 0.9; background-color: #82EEFD; border: none; border-radius: 15px; margin-left: 0px; height: 80px; width: 200px; font-size: 17pt; font-family: arial, sans-serif;}
+	button:hover		{opacity: 1.0; background-color: #52B2BF; cursor: pointer;}
+	.static 				{background-image: url("static.gif");
+						height: 100% background-position: top, 100% 100%; background-repeat: repeat;
+						background-size: contain;}
+	#nightmare:hover {
+	  animation-duration: 1.5s;
+	  animation-iteration-count: infinite;
+	  animation-name: flickering;
+	  animation-timing-function: step-start;
+	  color: #912914;
+	  font-family: 'UnifrakturCook', cursive;
+	  font-size: 40px;
+	}
+	td 					{border: none;}
+	#back				{height: 50px; width: 300px; opacity: 0.9; background-color: white; border: solid; border-radius: 15px; margin-left: 0px; font-size: 17pt; font-family: arial, sans-serif;}
+	#back:hover			{opacity: 1.0; background-color: lightgrey; cursor: pointer;}
+	li 					{font-family: arial, sans-serif;}
+	#title				{text-align: center; font-size: 80pt; font-family: impact, arial, sans-serif; text-shadow: dimgrey 5px 5px;}	
+	body				{background-color: lightgrey;}
+
+	@keyframes flickering {
+	  0% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  5% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  10% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(-15deg);
+	  }
+	  15% {
+		color: #ccc;
+		text-shadow: none;
+		transform: skewX(-15deg);
+	  }
+	  20% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  25% {
+		color: #ccc;
+		text-shadow: 2px 2px #912914;
+		transform: skewX(0);
+	  }
+	  30% {
+		color: #ccc;
+		text-shadow: 2px 2px #912914;
+		transform: skewX(0);
+	  }
+	  35% {
+		color: #ccc;
+		text-shadow: 2px 2px #912914;
+		transform: skewX(0);
+	  }
+	  37% {
+		color: #ccc;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  40% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  45% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  50% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  55% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  60% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  65% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  68% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  70% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  75% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(10deg);
+	  }
+	  80% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(10deg);
+	  }
+	  85% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(10deg);
+	  }
+	  90% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	  95% {
+		color: #912914;
+		text-shadow: 1px 1px #eee;
+		transform: skewX(0);
+	  }
+	  100% {
+		color: #912914;
+		text-shadow: none;
+		transform: skewX(0);
+	  }
+	}
