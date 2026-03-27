@@ -32,4 +32,4 @@ Known Issue:
 	- Timer sound effect won't play until sufficient user interaction on page due to browser restrictions
 
 
-Developed by Inigo Vanaman-Martin & Michael Krovisky
+Developed by Inigo V. & Michael K.
